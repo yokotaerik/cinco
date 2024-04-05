@@ -996,7 +996,10 @@ puído
 voilà
 cacto
 passe
-ultra`;
+ultra
+cinco
+mamão
+`;
 
 const listaDePalavras = palavras.split(`\n`)
 
