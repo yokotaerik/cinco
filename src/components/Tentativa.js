@@ -9,9 +9,10 @@ const Tentativa = ({ palavraAleatoria, palavraFormatada, tentativas }) => {
                 key={index}
                 className={`w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] text-6xl text-black sm:text-8xl rounded-xl text-center align-middle
                   ${
-                    letra === palavraFormatada[index]
+                    letra.normalize("NFD").replace(/[\u0300-\u036f]/g, "") ===
+                    palavraFormatada[index]
                       ? "bg-green-800"
-                      : palavraFormatada.includes(letra)
+                      : palavraAleatoria.includes(letra)
                       ? "bg-yellow-600"
                       : "bg-neutral-900"
                   }`}

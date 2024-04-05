@@ -109,6 +109,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-5xl sm:text-8xl font-bold my-10 ">CINCO</h1>
         <Tentativa
+          palavraAleatoria={palavraAleatoria}
           palavraFormatada={palavraFormatada}
           tentativas={tentativas}
         />

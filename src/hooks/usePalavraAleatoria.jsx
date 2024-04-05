@@ -10,7 +10,7 @@ const usePalavraAleatoria = () => {
     console.log(palavras);
     const indiceAleatorio = Math.floor(Math.random() * listaDePalavras.length);
     const novaPalavraAleatoria = listaDePalavras[indiceAleatorio];
-    setPalavraAleatoria(novaPalavraAleatoria);
+    setPalavraAleatoria(novaPalavraAleatoria.toUpperCase());
     setPalavraFormatada(
       novaPalavraAleatoria
         .toUpperCase()
